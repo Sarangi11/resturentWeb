@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Restaurant Name</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://images.pexels.com/photos/7002960/pexels-photo-7002960.jpeg?auto=compress&cs=tinysrgb&w=600=");
+           
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .content-section {
+            padding: 50px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+
+        .form-group input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+
+        .form-group input[type="reset"],
+        .form-group input[type="submit"] {
+            width: 100%;
+            background-color: #000000;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-section">
+        <h1>Contact Us</h1>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="full-name"><b>Full Name:</b></label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Full Name..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age"><b>Age:</b></label>
+                    <input type="text" id="age" name="age" placeholder="Age..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate"><b>Birthdate:</b></label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+
+                <div class="form-group">
+                    <label><b>Gender:</b></label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" id="email" name="email" placeholder="email..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-number"><b>Contact Number:</b></label>
+                    <input type="text" id="contact-number" name="contact-number" placeholder="contact-number..." required>
+                </div>
+
+                <div class="form-group">
+                    <label><b>Contact Methods:</b></label>
+                    <input type="checkbox" id="email-contact" name="contact-methods[]" value="email">
+                    <label for="email-contact">Email</label>
+                    <input type="checkbox" id="call-contact" name="contact-methods[]" value="call">
+                    <label for="call-contact">Call</label>
+                    <input type="checkbox" id="text-contact" name="contact-methods[]" value="text">
+                    <label for="text-contact">Text</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback"><b>Feedback or Concern:</b></label>
+                    <textarea id="feedback" name="feedback" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+        <!-- Testimonials Section -->
+        <h2>Testimonials</h2>
+        <p>Read what our valued customers have to say about their experiences at Restaurant Name.</p>
+        <blockquote>
+            <p>"Great food and excellent service! I always look forward to dining here."</p>
+            <cite>- John Doe</cite>
+        </blockquote>
+
+        <blockquote>
+            <p>"The flavors are amazing, and the ambiance is perfect. I highly recommend this restaurant."</p>
+            <cite>- Jane Smith</cite>
+        </blockquote>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Culinary Haven </p>
+    </footer>
+
+</body>
+</html>
